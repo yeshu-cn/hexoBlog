@@ -23,3 +23,11 @@ android程序内存被分为2部分：native和dalvik，dalvik就是我们平常
 3. handler的MessageQueue中Message生命周期过长，使内部类Handler中的Activity没有及时回收
 4. Receiver等没有反注册
 
+##### 引用类型
+
+| Refrernce type | 回收时机 |用途 |
+|---------------|---------|------|
+|Strong reference | JVM停止运行时 | 对象的一般状态 |
+|Soft reference | 内存不足时终止 | 构造缓存，内存不足时回收|
+|Weak reference | gc回收时 | 构造缓存，随时会被回收|
+|Phatom reference(虚引用) | gc回收时 | 不知道|
