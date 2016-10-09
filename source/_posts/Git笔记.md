@@ -92,5 +92,17 @@ git push -u origin master
 
 ```
 
+#### git commit --amend失败
+
+已经push后，又使用`--amend`提交导致push失败。
+
+```bash
+# 查看本地历史记录
+git reflog
+# 回滚（保留了修改,reset --hard会不保留修改）
+git reset ebb1864
+# 再重新commit提交
+
+```
 
 
