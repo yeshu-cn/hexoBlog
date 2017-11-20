@@ -1,10 +1,10 @@
 ---
-title: ExoPlayer notes-01
+title: ExoPlayer2-名词介绍
 date: 2017-11-20 15:02:15
 tags:
 ---
 
-# ExoPlayer notes-01
+# ExoPlayer2-名词介绍
 
 学习ExoPlayer之前一堆的视频相关的名词概念不清楚，代码都看不懂
 

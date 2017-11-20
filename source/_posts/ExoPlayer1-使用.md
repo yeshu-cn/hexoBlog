@@ -1,10 +1,10 @@
 ---
-title: ExoPlayer 1.x 使用
+title: ExoPlayer1-使用
 date: 2017-11-17 17:58:12
 tags:
 ---
 
-# ExoPlayer 1.x 使用
+# ExoPlayer1-使用
 
 https://google.github.io/ExoPlayer/guide-v1.html
 
