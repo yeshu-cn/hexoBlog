@@ -7,6 +7,8 @@ tags:
 
 # LiveData
 
+原来LiveData只要调用setValue就会回调onChange(),不关心数据值是否真的发生变化了。不过会关心observer的state
+
 from:https://developer.android.com/topic/libraries/architecture/livedata
 
 * LiveData是一个可被监听其中数据变化的Observer
