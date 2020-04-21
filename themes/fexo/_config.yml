@@ -1,7 +1,7 @@
 # Blog info
 blog_name: yeshu blog
 slogan: 听歌写代码
-url: http://www.yeshu.work
+url: yeshu.work
 
 # Set avatar (Absolute url and relative url)
 avatar: /images/avatar.jpg
@@ -10,7 +10,7 @@ avatar: /images/avatar.jpg
 favicon: /favicon.ico
 
 # For seo
-keywords: yeshu android
+keywords: yeshu,android
 
 home_nav:
   - name: Blog
@@ -58,7 +58,7 @@ breadcrumb:
 
 # 盒子
 toolbox:
-  isShow: false # true|fase
+  isShow: true # true|fase
   text: 盒子
 
 search_slogan:
@@ -66,7 +66,7 @@ search_slogan:
   text: Can you find the bug of world ~
 
 link_slogan:
-  isShow: false # true|fase
+  isShow: true # true|fase
   text: 交换友链可以邮件 forsigner@gmail.com
 
 
@@ -81,7 +81,7 @@ backtop:
   about: false
 
 donation:
-  show: false
+  show: true
   btn_text: 支持一下
   tip: 扫一扫，支持forsigner
   items:
@@ -100,14 +100,16 @@ post:
   showToc: true # true|false
   showComments: true
   open_in_new_window: false
+  show_prev_next: true
 
 # =========================================================
 # 个性化设置
 # =========================================================
 
-# Custom CSS style
+# Custom CSS style, 推荐把样式文件放在blog源码文件夹，而不是主题里面
 personal_style: /css/personal-style.css
 
+# 这个值取决于你得背景图片是深色还是浅色，深色用dark，浅色用light
 home_background_scheme: light # dark、light
 
 # custom font-family 暂时只支持这3种英文字体，你可以完全自定义字体(看文档)
@@ -115,20 +117,75 @@ blog_name_font_familiy: calligraffittiregular
 # blog_name_font_familiy: Lobster-Regular
 # blog_name_font_familiy: PoiretOne-Regular
 
-init_page_content: POST  # HOME_NAV | POST
+init_page_content: HOME_NAV  # HOME_NAV | POST
 
 
 # =========================================================
 # 第三方服务
 # =========================================================
 # Stats
-google_analytics:
+google_analytics: UA-38189205-1
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 
 # Comment service
-# disqus_shortname: forsigner
-# duoshuo_shortname: forsigner
 
+# disqus_shortname: forsigner
+# hypercomments_id: 89821
+# gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
+
+#有言用户编号
+# uyan_key:
+
+# 畅言, doc: http://changyan.kuaizhan.com/
+changyan:
+  enable: false  # true | false  这里开启
+  changyan_appid:
+  changyan_appkey:
+
+# gitalk评论组件，把下面的配置换成你的，官方文档: https://gitalk.github.io/
+gitalk:
+  enable: true # 如果使用 gitalk，请设置改之为true
+  clientID: 277317290454635afa73
+  clientSecret: 78223c859304da5e8d71bfce136d436c6ff95c37
+  repo: blog-comment
+  owner: forsigner
+  admin: forsigner
+
+
+# gitment comment service
+gitment:
+  enable: false  # true | false  这里开启
+  owner:  # Your GitHub ID. Required.
+  repo:  # The repository to store your comments. Make sure you're repo's owner. Required.
+  oauth: # An object contains your client ID and client secret. Required.
+    client_id: # GitHub client ID. Required.
+    client_secret: # GitHub client secret. Required.
+  id: # An optional string to identify your page. Default location.href.
+  title: # An optional title for your page, used as issue's title. Default document.title.
+  link: # An optional link for your page, used in issue's body. Default location.href.
+  desc: # An optional description for your page, used in issue's body. Default ''.
+  labels: # An optional array of labels your want to add when creating the issue. Default [].
+  theme: # An optional Gitment theme object. Default gitment.defaultTheme.
+  perPage: # An optional number to which comments will be paginated. Default 20.
+  maxCommentHeight: # An optional number to limit comments' max height, over which comments will be folded. Default 250.
+
+# Valine comment system  https://valine.js.org
+valine:
+  enable: false # 如果使用valine，请设置改之为true
+  appid:  # your leancloud application appid
+  appkey:  # your leancloud application appkey
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: Just go go # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+
+
+
+
+# 不算子,文章访问量统计和显示
+busuanzi: true
 
 # =========================================================
 # 页面内容设置
@@ -179,10 +236,11 @@ link:
     info: FP, GUI, Writing
     url: http://tiye.me/
     avatar: https://avatars2.githubusercontent.com/u/449224?v=3&s=100
-  - name: idisfkj
-    info: Android成长分享
-    url: http://idisfkj.github.io
-    avatar: https://avatars1.githubusercontent.com/u/8677862?v=3&s=100
+  - name: McChen
+    info: Stay Hungry, Stay Foolish
+    url: https://chenjiahao.xyz
+    avatar: https://avatars0.githubusercontent.com/u/8033333?v=3&s=100
+
 
 project:
   - type: personal
