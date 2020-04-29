@@ -6,16 +6,15 @@ tags:
 
 > 
 Google Play 会限制应用使用高风险或敏感权限，包括短信或通话记录权限组。
-
 > 如果您的应用不需要使用通话记录或短信权限，您必须从应用的清单中移除这些权限。下文还详细介绍了符合政策的替代实现方式的相关细节。
-
+> 
 > 如果您认为自己的应用在政策允许使用的范畴内，或属于可以使用这些权限的例外情况，那么您应直接通过 Play 管理中心声明通话记录或短信权限。
-
+> 
 > 对于逾期仍不符合政策要求或未提交声明表单的应用，我们可能会将其从 Google Play 中移除。
 
 发现项目中引入了`PROCESS_OUTGOING_CALLS`敏感权限，但是主工程中没有直接引入这个权限
 
-### 1.查找引入权限的library
+## 1.查找引入权限的library
 `build/outputs/logs/manifest-merger-debug-report.txt`
 文件中查看权限从哪个依赖中引入
 
@@ -25,7 +24,7 @@ uses-permission#android.permission.PROCESS_OUTGOING_CALLS
 ADDED from [com.xxx.xxx:lib:1.1.0]...
 ```
 
-### 2.library有可能是子module的依赖，查找是哪个子module引入的
+## 2.library有可能是子module的依赖，查找是哪个子module引入的
 查看项目的依赖树:`./gradlew app:dependencies > ~/Downloads/log.txt`
 
 文件结构如下：
@@ -50,7 +49,7 @@ NormalDebugAndroidTestImplementationDependenciesMetadata
      \--- com.google.errorprone:error_prone_annotations:2.0.19
 ```
 
-### 3. `tools:node="remove"`删除权限
+## 3. `tools:node="remove"`删除权限
 合并清单时通过`tools:node="remove"`控制删除权限
 ```
 <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" tools:node="remove" />
