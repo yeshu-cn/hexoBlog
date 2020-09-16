@@ -2,6 +2,7 @@
 title: Coroutines使用
 date: 2020-04-30 17:04:35
 tags:
+categories: Android
 ---
 
 ## Android上为什么使用Coroutines

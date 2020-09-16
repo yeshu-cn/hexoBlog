@@ -2,6 +2,7 @@
 title: 使用sharepreference还是database?
 date: 2019-05-31 11:15:57
 tags:
+categories: 架构设计
 ---
 
 

@@ -2,6 +2,7 @@
 title: liveData优缺点总结
 date: 2020-05-18 11:36:40
 tags:
+categories: 架构设计
 ---
 
 优点

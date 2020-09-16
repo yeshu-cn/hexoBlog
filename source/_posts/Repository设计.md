@@ -2,6 +2,7 @@
 title: Repository设计
 date: 2020-07-08 15:03:12
 tags:
+categories: 架构设计
 ---
 
 # Repository设计

@@ -2,6 +2,7 @@
 title: 使用android Room 返回LiveData的方式的缺点
 date: 2020-05-18 10:56:43
 tags:
+categories: 架构设计
 ---
 
 

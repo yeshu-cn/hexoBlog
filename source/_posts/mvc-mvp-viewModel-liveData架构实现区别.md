@@ -2,6 +2,7 @@
 title: 'mvc,mvp,viewModel+liveData架构实现区别'
 date: 2018-05-30 15:32:04
 tags:
+categories: 架构设计
 ---
 
 

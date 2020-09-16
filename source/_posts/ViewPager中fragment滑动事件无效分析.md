@@ -2,6 +2,7 @@
 title: ViewPager中fragment滑动事件无效分析
 date: 2020-04-21 10:32:20
 tags: android
+categories: Android
 ---
 
 原因：`ViewPager`默认的`onInterceptTouchEvent`方法中在判断出正在滑动时就拦截了触摸事件。
